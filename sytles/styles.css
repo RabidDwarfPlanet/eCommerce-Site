@@ -8,17 +8,33 @@ hr{
 .sectionBar{
    margin-right: 45%;
 }
+button{
+    background-color: #BF7631;
+    border: none;
+    padding: 0px 10px;
+    color: white;
+    font-weight: 500;
+    height: 30px;
+  }
+  button:hover{
+    background-color: #995414;
+}
 h2{
     font-size:40px;
     font-weight: 470;
     margin-block-end: 0;
 }
+.section{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
 
 header{
     padding-left: 120px;
     padding-right: 120px;
-}
-ul {
+  }
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -29,30 +45,43 @@ ul {
     display: flex;
     height: 25px;
     position: absolute;
-    left: 50%;
-    align-items: center;
+    left: 46%;
     padding: 12px 0px;
-    letter-spacing: 5px;
   }
   .logoImage{
     height: 40px;
     object-fit: contain;
   }
-  input{
-    background-image: url(/images/1200px-Google_Magnifying_Glass.svg.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    display: flex;
-    float: right;
-    align-self: center;
+  .wrapper{
+    position: relative;
   }
-  .cart{
-    float: right;
+  .wrapper button{
+    position: absolute;
+    right: 0;
+    height: 80%;
+    margin-top: 3px;
+    margin-right: 3px;
+    background-color: white;
+  }
+  .wrapper button:hover{
+    background-color: #bebebe;
+  }
+  .search{
+    /* background-image: url(/images/1200px-Google_Magnifying_Glass.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat; */
+    background-position: right;
+    height: 20px;
+    align-items: center;
+  }
+
+  .searchButtonIcon{
+    height: 20px;
   }
   li {
     float: left;
   }
+
   li a {
     display: block;
     color: black;
@@ -68,6 +97,11 @@ ul {
   li a:hover {
     background-color: #111;
     color: white;
+  }
+  .rightHeader{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .hero{
@@ -75,19 +109,19 @@ ul {
     justify-content: space-between;
     background-image:linear-gradient(to right, rgba(255,0,0,0), rgba(0,0,0,1)), 
     linear-gradient(to left, rgba(255,0,0,0), rgba(0,0,0,1)),
-    url(/images/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg)
-    ;
+    url(/images/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg);
     background-color: black;
     background-size: 30% 100%, 30% 100%, contain;
     background-repeat: no-repeat;
     background-position:77%, 23%, center;
-    height: 60vh;
-}
-.heroText{
+    height: 60vh; 
+    margin-top: 20px;
+  }
+  .heroText{
     letter-spacing: 3px;
     color: white;
     font-size: 2em;
-    width: 200px;
+    width: 250px;
   }
   .rightText{
     display: flex;
@@ -100,57 +134,147 @@ ul {
     margin-left: 7.5em;
 }
 
-.section{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
+.container1-1{
+    display: flex;
+  }
+  .container1-2{
+    display: flex;
+    flex-direction: column;
+  }
+  .container1-3{
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+  }
+  .container1-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0% 10%;
+  }
+  .aboutText{
+    font-size: 20px;
+  }
+  .aboutTopText{
+    padding: 4%;
+  }
+  .aboutBotText{
+    align-self: flex-end;
+  }
+  .aboutImage1{
+    width: 40%;
+    object-fit: contain;
+  }
+  .aboutImage2{
+    transform: scaleX(-1);
+    width: 35%;
+    object-fit: contain;
 }
 
-button{
-    background-color: #BF7631;
-    border: none;
-    padding: 0px 10px;
-    color: white;
-    font-weight: 500;
-    height: 30px;
-}
-button:hover{
-    background-color: #995414;
-}
-
-.container1{
+.container2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-.product{
+  }
+  .product{
     width: 450px;
     padding: 30px;
     flex-wrap: wrap;
-}
-.productImage{
+  }
+  .productImage{
     width: 450px;
     height: 475px;
     object-fit: cover;
     border: 1px solid black;
-}
-.productBar{
-
+  }
+  .productBar{
     width: 300px;
-    position: relative;
-    left: 0%;
-}
-.productHeader{
+    float: left;
+  }
+  .productHeader{
     display: flex;
     justify-content: space-between;
-}
-.productFooter{
+  }
+  .productHeaderText{
+    font-size: 30px;
+    margin: 2%;
+  }
+  .productFooter{
     display: flex;
     justify-content: space-between;
-}
-.learnMore{
+  }
+  .learnMore{
     color: #BF7631;
 }
+
+.container3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0% 20%;
+  }
+  .contactsText{
+    font-size: 25px;
+    margin: 0;
+    padding-top: 3%;
+    padding-bottom: 1%;
+  }
+  .send{
+    width: 7em;
+    margin: 5% 0%;
+    align-self: flex-end;
+  }
+  .message{
+    font-size: 15px;
+    padding: 5px;
+  }
+  .email{
+    padding: 5px;
+    font-size: 20px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #BF7631;
+    
+  }
+  .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20%;
+  }
+  .icon{
+    height: 4em;
+    padding: 0% 10px;
+  }
+  .footerLogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0% 20%;
+  }
+  .footerLogoImage{
+    height: 80px;
+  }
+  .footerCara{
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .footerText{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20%;
+  }
+  .copyright{
+    align-self: flex-end;
+    padding-right: 1%;
+  }
+
+
+
 
 
 
