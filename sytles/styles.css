@@ -67,9 +67,6 @@ header{
     background-color: #bebebe;
   }
   .search{
-    /* background-image: url(/images/1200px-Google_Magnifying_Glass.svg.png);
-    background-size: contain;
-    background-repeat: no-repeat; */
     background-position: right;
     height: 20px;
     align-items: center;
